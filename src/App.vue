@@ -16,4 +16,7 @@ export default {
 
 <style lang="scss">
 @import "@/assets/scss/index.scss";
+body {
+  background: #f0f0f0;
+}
 </style>

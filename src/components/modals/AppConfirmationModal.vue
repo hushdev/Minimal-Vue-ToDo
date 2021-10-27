@@ -2,7 +2,7 @@
   <div class="modal-wrap">
     <form class="modal bg-white">
       <slot></slot>
-      <span class="text">Это действие невозможно отменить</span>
+      <span class="text fs-4">Это действие невозможно отменить</span>
       <div class="actions">
         <app-btn @click.native="$emit('accept')" text="Да, удалить" primary />
         <app-btn @click.native="$emit('deny')" text="Отменить" secondary />
@@ -35,11 +35,11 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.788);
+  background: #f0f0f0;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 100;
   padding: 15px;
 
   .modal {
@@ -47,12 +47,17 @@ export default {
     flex-direction: column;
     padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.288);
+
     .text {
-      margin: 10px 0 40px 0;
+      margin: 10px 0 30px 0;
     }
     .actions {
       button:first-child {
         margin-right: 10px;
+      }
+      button {
+        margin-top: 10px;
       }
     }
   }

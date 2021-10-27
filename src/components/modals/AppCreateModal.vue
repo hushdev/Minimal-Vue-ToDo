@@ -55,17 +55,19 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.788);
+  background: #f0f0f0;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 100;
   padding: 15px;
   .modal {
     display: flex;
     flex-direction: column;
     padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.288);
+
     input {
       margin: 10px 0 40px 0;
       padding: 10px;

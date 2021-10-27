@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <span class="fs-6 fw-b text-main">Мои задачи</span>
+    <span class="fs-9 fw-b text-main">Мои задачи</span>
     <span class="fs-3 text-secondary">
       Test project by
       <a
@@ -21,7 +21,7 @@ nav {
   justify-content: space-between;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 480px) {
   nav {
     flex-direction: column;
     align-items: flex-start;
